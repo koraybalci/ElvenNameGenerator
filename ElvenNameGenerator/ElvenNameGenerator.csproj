@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.4</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>0.1.0</Version>
+    <Authors>Koray Balci</Authors>
+    <Company />
+    <PackageProjectUrl>https://github.com/koraybalci/ElvenNameGenerator</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/koraybalci/ElvenNameGenerator</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageTags>random-name-generator elven elvish</PackageTags>
+    <NeutralLanguage />
+    <Description>A simple C# code that generates random elvish names.</Description>
+    <PackageLicenseUrl>https://github.com/koraybalci/ElvenNameGenerator/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageReleaseNotes>A working prototype</PackageReleaseNotes>
+    <AssemblyVersion>0.1.0.0</AssemblyVersion>
+  </PropertyGroup>
+
+</Project>
