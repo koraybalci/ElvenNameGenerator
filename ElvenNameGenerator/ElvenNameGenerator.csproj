@@ -1,9 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.4</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>0.1.0</Version>
+    <Title>ElvenNameGenerator</Title>
+    <Version>1.0.0</Version>
     <Authors>Koray Balci</Authors>
     <Company />
     <PackageProjectUrl>https://github.com/koraybalci/ElvenNameGenerator</PackageProjectUrl>
@@ -11,10 +13,17 @@
     <RepositoryType>Git</RepositoryType>
     <PackageTags>random-name-generator elven elvish</PackageTags>
     <NeutralLanguage />
-    <Description>A simple C# code that generates random elvish names.</Description>
-    <PackageLicenseUrl>https://github.com/koraybalci/ElvenNameGenerator/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageReleaseNotes>A working prototype</PackageReleaseNotes>
-    <AssemblyVersion>0.1.0.0</AssemblyVersion>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Description>
+      A simple C# code that generates random elvish names.
+
+      As a developer, whenever test data needed for people names, I create a similiar solution to this one that generates some random names. Using some elven names made it culture invariant and sort of fun.
+    </Description>
+    <PackageReleaseNotes>
+      * Introduced an interface for DI needs.
+      * Updated dependencies to latest dotnet standard.
+    </PackageReleaseNotes>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </PropertyGroup>
 
 </Project>

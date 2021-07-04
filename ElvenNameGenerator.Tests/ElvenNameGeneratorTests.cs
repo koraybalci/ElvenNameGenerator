@@ -16,9 +16,9 @@ namespace ElvenNameGenerator.Tests
 		[InlineData(10)]
 		[InlineData(20)]
 		[InlineData(100)]
-		public void GenerateFullName_ShouldGenerate_ExpectedNumberofNames(int count)
+		public void GenerateFullName_ShouldGenerate_ExpectedNumberOfNames(int count)
         {
-			var names = _generator.GenerateFullName().Take(count);
+			var names = _generator.GenerateFullNames().Take(count);
 
 			Assert.Equal(count, names.Count());
         }
@@ -29,8 +29,8 @@ namespace ElvenNameGenerator.Tests
 			var generator1 = new ElvenNameGenerator(42);
 			var generator2 = new ElvenNameGenerator(42);
 
-			Assert.Equal(generator1.GenerateFullName().Take(1).First(), 
-				generator2.GenerateFullName().Take(1).First());
+			Assert.Equal(generator1.GenerateFullNames().Take(1).First(),
+				generator2.GenerateFullNames().Take(1).First());
 		}
 
 		[Fact]
@@ -39,8 +39,8 @@ namespace ElvenNameGenerator.Tests
 			var generator1 = new ElvenNameGenerator(41);
 			var generator2 = new ElvenNameGenerator(42);
 
-			Assert.NotEqual(generator1.GenerateFullName().Take(1).First(),
-				generator2.GenerateFullName().Take(1).First());
+			Assert.NotEqual(generator1.GenerateFullNames().Take(1).First(),
+				generator2.GenerateFullNames().Take(1).First());
 		}
 
 		[Theory]
@@ -48,7 +48,7 @@ namespace ElvenNameGenerator.Tests
 		public void GeneratedName_ShouldNotContainSpace()
 		{
 			var name = _generator.GenerateName();
-			
+
 			Assert.DoesNotContain(" ", name);
 		}
 	}

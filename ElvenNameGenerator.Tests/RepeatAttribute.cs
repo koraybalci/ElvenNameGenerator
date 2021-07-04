@@ -21,9 +21,7 @@ namespace ElvenNameGenerator.Tests
 			_count = count;
 		}
 
-		public override IEnumerable<object[]> GetData(MethodInfo testMethod)
-		{
-			return Enumerable.Repeat(new object[0], _count);
-		}
-	}
+		public override IEnumerable<object[]> GetData(MethodInfo testMethod) =>
+            Enumerable.Repeat(new object[0], _count);
+    }
 }
